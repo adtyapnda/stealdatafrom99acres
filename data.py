@@ -6,7 +6,7 @@ import pandas as pd
 
 def scrape_99acres():
     # Start with a specific search URL from 99acres
-    url = "https://www.99acres.com/search/property/buy/residential-all/delhi-ncr-all"
+    url = "https://www.99acres.com/search/property/lease/noida?city=7&property_type=91&includeCoworking=true&preference=L&area_unit=1&res_com=C"
     
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
@@ -90,7 +90,7 @@ def scrape_with_selenium():
     driver = webdriver.Chrome(service=service, options=options)
     
     try:
-        url = "https://www.99acres.com/search/property/buy/residential-all/delhi-ncr-all"
+        url = "https://www.99acres.com/search/property/lease/noida?city=7&property_type=91&includeCoworking=true&preference=L&area_unit=1&res_com=C"
         print("Loading page with Selenium...")
         driver.get(url)
         
